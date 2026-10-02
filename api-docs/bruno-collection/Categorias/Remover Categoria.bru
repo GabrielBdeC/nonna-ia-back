@@ -1,0 +1,12 @@
+meta {
+  name: Remover Categoria
+  type: http
+  seq: 1
+}
+
+delete {
+  url: http://localhost:8080/categorias/{{id_categoria}}
+  body: none
+  auth: none
+}
+

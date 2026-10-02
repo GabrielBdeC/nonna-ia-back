@@ -1,0 +1,21 @@
+meta {
+  name: Cancelar Reserva
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/reserva/{{id_reserva}}/cancelar
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "motivo": "Imprevisto"
+  }
+}

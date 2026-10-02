@@ -1,0 +1,12 @@
+meta {
+  name: Buscar Pedido
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8080/pedidos/{{id_pedido}}
+  body: none
+  auth: none
+}
+

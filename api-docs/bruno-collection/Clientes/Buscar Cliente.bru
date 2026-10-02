@@ -1,0 +1,12 @@
+meta {
+  name: Buscar Cliente
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8080/clientes/{{id_cliente}}
+  body: none
+  auth: none
+}
+

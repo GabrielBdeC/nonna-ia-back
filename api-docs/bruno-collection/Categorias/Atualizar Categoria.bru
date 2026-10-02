@@ -1,0 +1,21 @@
+meta {
+  name: Atualizar Categoria
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://localhost:8080/categorias/{{id_categoria}}
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nome": "Sobremesas Especiais"
+  }
+}

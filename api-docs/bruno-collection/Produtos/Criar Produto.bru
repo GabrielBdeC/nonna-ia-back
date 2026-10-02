@@ -1,0 +1,25 @@
+meta {
+  name: Criar Produto
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/produtos
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nome": "Tiramisu",
+    "descricao": "Doce italiano",
+    "preco": 25.50,
+    "idCategoria": "uuid-da-categoria",
+    "imagem": "url_aqui"
+  }
+}

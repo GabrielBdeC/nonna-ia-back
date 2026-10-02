@@ -1,0 +1,25 @@
+meta {
+  name: Atualizar Cliente
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://localhost:8080/clientes/{{id_cliente}}
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "cpf": "111.111.111-11",
+    "nome": "João",
+    "sobrenome": "Silva",
+    "email": "joao@example.com",
+    "senha": "nova_senha"
+  }
+}

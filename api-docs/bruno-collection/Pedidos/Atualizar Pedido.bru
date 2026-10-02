@@ -1,0 +1,23 @@
+meta {
+  name: Atualizar Pedido
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://localhost:8080/pedidos/{{id_pedido}}
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "status": "EM_PREPARO",
+    "horarioSaida": "2026-10-02T20:00:00",
+    "horarioFinalizacao": null
+  }
+}

@@ -1,0 +1,12 @@
+meta {
+  name: Remover Produto
+  type: http
+  seq: 1
+}
+
+delete {
+  url: http://localhost:8080/produtos/{{id_produto}}
+  body: none
+  auth: none
+}
+

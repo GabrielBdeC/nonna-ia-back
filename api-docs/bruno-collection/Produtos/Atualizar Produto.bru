@@ -1,0 +1,29 @@
+meta {
+  name: Atualizar Produto
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://localhost:8080/produtos/{{id_produto}}
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nome": "Tiramisu Grande",
+    "descricao": "Doce italiano",
+    "preco": 30.50,
+    "idCategoria": "uuid-da-categoria",
+    "imagem": "url_aqui"
+  }
+}
+
+vars:pre-request {
+  id_produto: 523e4567-e89b-12d3-a456-426614174004
+}

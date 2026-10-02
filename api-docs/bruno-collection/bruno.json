@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Cantina da Nonna API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,12 @@
+meta {
+  name: Buscar Produto
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8080/produtos/{{id_produto}}
+  body: none
+  auth: none
+}
+
